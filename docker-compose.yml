@@ -16,7 +16,7 @@ services:
       - "25565:25565"
     environment:
       TYPE: FORGE
-      VERSION: 1.20.6
+      VERSION: 1.20.1
       EULA: "TRUE"
     volumes:
       - /mnt/sda/mc:/data
