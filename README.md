@@ -7,7 +7,6 @@
 - Set up port forwarding as applicable on router
 
 ### Set up storage drive
-Will assume /dev/
 - Create filesystem on drive (`mkfs -t ext4 /dev/sda`)
 - Add drive to fstab file so it's mounted on startup
 - Reboot to verify fstab
