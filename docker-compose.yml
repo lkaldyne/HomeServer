@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  flasksrv:
+    build:
+      context: ./py/flasksrv
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
