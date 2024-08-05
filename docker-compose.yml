@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
+      
   mc:
     image: itzg/minecraft-server
     tty: true
@@ -17,3 +18,12 @@ services:
       EULA: "TRUE"
     volumes:
       - /mnt/sda/mc:/data
+
+  jellyfin:
+    build:
+      context: ./jellyfin
+      dockerfile: Dockerfile
+    volumes:
+      - "/mnt/sda/media:/media"
+    ports:
+      - "8096:8096"
